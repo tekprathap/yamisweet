@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yamisweet</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+   <!-- cart item -->
+    <section id="cart">
+        <i class="fa-solid fa-cart-plus" id="addcart"></i>
+        <div class="cart">
+              <h1 class="text-danger mx-5 my-2">Yourcart</h1>
+              <div class="cart-container">
+                <!-- <div class="cart-box">
+                    <img src="${imgSrc}" class="cartimg">
+                <div class="detail-box">
+                  <div class="carfodtitle">${title}</div>
+                  <div class="price-box">
+                    <div class="cart-price">${price}</div>
+                     <div class="cart-amt">${price}</div>
+                 </div>
+                 <input type="number" class="cart-quantity" value="1">
+                </div>
+                <i class="fa-solid fa-xmark" id="remove"></i>
+              </div> -->
+               
+                  
+              </div>
+              <div class="total">
+                <p class="total-title">Total</p>
+                <h6 class="total-price">Rs.0</h6>
+            </div>
+            <i class="fa-solid fa-xmark" id="close"></i>
+            <h6 class="text-center bg-danger py-4 px-5 mx-5 text-light">conform order</h6>
+        </div>
+      
+    </section>
+   <section class="menu">
+     
+    <div class="container">
+        <h1></h1>
+    <div class="row">
+        <div class="col-lg-3 col-md-6 col-12">
+            <div class="card">
+                <img src="https://img.freepik.com/premium-photo/sweet-baked-belgian-waffles-generate-ai_98396-78195.jpg?w=740" alt="" class="img-fluif menuimg">
+                <div class="card-body">
+                    <p class="text-center menu-food"><b>Waffle with barries</b></p>
+                    <p class="text-center text-danger menu-price">Rs.65</p>
+                </div>
+                <button type="button" class="btn btn-outline-secondary text-dark mx-5 my-2" id="menubtn"><b>Add to card</b></button>
+            </div>
+           
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+            <div class="card">
+                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQV3lAyBm5W2DJRzvbPx9lCC5__q09-0XlBRHtjB71K1gaEzcJP" alt="" class="img-fluif menuimg">
+                <div class="card-body">
+                    <p class="text-center menu-food"><b>Vannillabea creame bruile</b></p>
+                    <p class="text-center text-danger menu-price">Rs.70</p>
+                </div>
+                <button type="button" class="btn btn-outline-secondary text-dark mx-5 my-2" id="menubtn"><b>Add to card</b></button>
+            </div>
+           
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+            <div class="card">
+                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTRwBKpMsRM1T-L-RNz3duTqJ_-k37MZRspRCyk6R5m1K8gdJ80" alt="" class="img-fluif menuimg">
+                <div class="card-body">
+                    <p class="text-center menu-food"><b>Macarnon mix of five</b></p>
+                    <p class="text-center text-danger menu-price">Rs.80</p>
+                </div>
+                <button type="button" class="btn btn-outline-secondary text-dark mx-5 my-2" id="menubtn"><b>Add to card</b></button>
+            </div>
+           
+        </div>
+      
+       
+        
+    </div>
+   
+    <div class="row">
+        <div class="col-lg-3 col-md-6 col-12">
+            <div class="card">
+                <img src="https://img.freepik.com/free-photo/sweet-cake-table_140725-1424.jpg?t=st=1721207161~exp=1721210761~hmac=34484e32bb0ceee70b45d2cd7d3e414427d60fba5bbaa9fd23100b24b848cbcc&w=740" alt="" class="img-fluif menuimg">
+                <div class="card-body">
+                    <p class="text-center menu-food "><b>Classic Tiramisu</b></p>
+                    <p class="text-center text-danger menu-price">Rs.55</p>
+                </div>
+                <button type="button" class="btn btn-outline-secondary text-dark mx-5 my-2" id="menubtn"><b>Add to card</b></button>
+            </div>
+           
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+            <div class="card">
+                <img src="https://img.freepik.com/free-photo/top-view-turkish-baklava-with-spoon-rag-round-plate_176474-3483.jpg?t=st=1721207283~exp=1721210883~hmac=c77e26d9ec8ca21feb4fa4f2a250a1bfe8bccdb23e1f7ab522cfbbeff340dc58&w=740" alt="" class="img-fluif menuimg">
+                <div class="card-body">
+                    <p class="text-center menu-food"><b>pstacho bakalava</b></p>
+                    <p class="text-center text-danger menu-price">Rs.40</p>
+                </div>
+                <button type="button" class="btn btn-outline-secondary text-dark mx-5 my-2" id="menubtn"><b>Add to card</b></button>
+            </div>
+           
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+            <div class="card">
+                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTOwvp1BGObi2DvFzXw4Bl2yKwghCcQjErPst5_jEx_XAaaYhAX" alt="" class="img-fluif menuimg">
+                <div class="card-body">
+                    <p class="text-center menu-food"><b>Lemon meringue pie</b></p>
+                    <p class="text-center text-danger menu-price">Rs.50</p>
+                </div>
+                <button type="button" class="btn btn-outline-secondary text-dark mx-5 my-2" id="menubtn"><b>Add to card</b></button>
+            </div>
+           
+        </div>
+      
+       
+        
+    </div>
+   
+    <div class="row">
+        <div class="col-lg-3 col-md-6 col-12">
+            <div class="card">
+                <img src="image-cake-tablet.jpg" alt="" class="img-fluif menuimg">
+                <div class="card-body">
+                    <p class="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTVdZaudrcQL6wnfGXmPNmAWvFWcFpiJuJsY0jC16dQ2QAsm1q7"><b>Red velved cake</b></p>
+                    <p class="text-center text-danger menu-price">Rs.45</p>
+                </div>
+                <button type="button" class="btn btn-outline-secondary text-dark mx-5 my-2" id="menubtn"><b>Add to card</b></button>
+            </div>
+           
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+            <div class="card">
+                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRui5NtR3JeBV4vuaxOB9xp3zoCiypBdYeILNSOW0XlGBGD8RsG" alt="" class="img-fluif menuimg">
+                <div class="card-body">
+                    <p class="text-center menu-food"><b>Salted caramel Browine</b></p>
+                    <p class="text-center text-danger menu-price">Rs.40</p>
+                </div>
+                <button type="button" class="btn btn-outline-secondary text-dark mx-5 my-2" id="menubtn"><b>Add to card</b></button>
+            </div>
+           
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+            <div class="card">
+                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQYCI_6ic3tk7h_61lzguItVoMqjiwgvnOcCvOQIQlye4V51Dwz" alt="" class="img-fluif menuimg">
+                <div class="card-body">
+                    <p class="text-center menu-food "><b>Vanilla panna chotta</b></p>
+                    <p class="text-center text-danger menu-price">Rs.65</p>
+                </div>
+                <button type="button" class="btn btn-outline-secondary text-dark mx-5 my-2" id="menubtn"><b>Add to card</b></button>
+            </div>
+           
+        </div>
+      
+       
+        
+    </div>
+   
+    </div>
+      
+   </section>
+</body>
+<script src="scripth.js"></script>
+</html>

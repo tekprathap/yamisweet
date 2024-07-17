@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.rows{
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.col{
+    margin: 10px;
+}
+.card{
+   margin: 10px;
+}
+.card img{
+    height: 200px;
+    border: 3px solid maroon;
+    border-radius: 5px;
+}
+.menu button{
+    border-radius: 50px;
+    outline: none;
+  
+}
+.menu button:hover{
+    background-color: red;
+    color: white !important;
+}
+
+.cart{
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    border: 2px solid red;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: fixed;
+    z-index: 100;
+    right: -190%;
+    
+}
+.cartactive{
+    position: absolute;
+    right: 20px;
+    transition: all 5s;
+}
+.cart-box{
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin: 10px;
+    border-bottom: 1px solid black;
+}
+.cartimg{
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    border: 2px solid black;
+}
+.detail-box{
+    display: grid;
+    row-gap: 0.5rem;
+}
+.price-box{
+    display: flex;
+    
+    justify-content: space-between;
+}
+#cart h6{
+    border-radius: 30px;
+  
+}
+#close{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: red;
+    font-weight: 500;
+    font-size: large;
+    cursor: pointer;
+
+}
+.menuimg{
+    cursor: pointer;
+}
+
+.carfodtitle{
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: orangered;
+}
+.cart-price{
+    font-weight: 500;
+    color: red;
+}
+.total{
+    display: flex;
+    justify-content: space-between;
+  
+    margin-top: 1.5rem;
+    margin: 10px;
+}
+.total-title{
+    font-weight: 500;
+    align-items: center;
+}
+.menu-price{
+    font-weight: 500;
+}
+#addcart{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+    margin-right: 20px;
+}
+#model{
+    background-color: gray;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+#model.modelactive{
+    display: grid;
+    place-items: center;
+}
+#imgs{
+width: 450px;
+object-fit: cover;
+border:  4px solid white;
+height: 400px;
+cursor: pointer;
+}
+@media (max-width:490px) {
+    .cart{
+        width: 400px;
+    }
+    #imgs{
+        width: 350px;
+        height: 350px;
+    }
+}
+@media (max-width:370px) {
+    .cart{
+        width: 320px;
+    }
+    #imgs{
+        width: 350px;
+        height: 350px;
+    }
+}
+@media (max-width:320px) {
+    
+    #imgs{
+        width: 310px;
+        height: 350px;
+    }
+}
+
+
+
+/* model */
+
+
+
+
+
+
